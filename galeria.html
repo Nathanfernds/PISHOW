@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PISHOW - Galeria</title>
+    <link rel="icon" href="imagens/p.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .container {
+            margin-top: 10px;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PISHOW</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre nós</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="galeria.html" style="color: orange;">Galeria</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </nav>
+      </header>
+
+    <main>
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="gallery-grid">
+                <img src="imagens/produto1-mouse.jpg" alt="Produto 1 - Mouse Gamer">
+                <img src="imagens/produto2-teclado.jpg" alt="Produto 2 - Teclado Mecânico">
+                <img src="imagens/produto5-ryzen.jpg" alt="Produto 3 - Processador Ryzen">
+                <img src="imagens/produto6-placamae.jpg" alt="Produto 4 - Placa Mãe">
+                <img src="imagens/produto8-mousepad.jpg" alt="Produto 5 - Mouse Pad">
+                <img src="imagens/produto9-placadevideo.jpg" alt="Produto 6 - Placa de Vídeo">
+                <img src="imagens/produto10-ssd.jpg" alt="Produto 7 - SSD NVMe">
+                <img src="imagens/produto11-xboxseriesx.jpg" alt="Produto 8 - XBOX Series X">
+                <img src="imagens/ps5.jpg" alt="Produto 9 - PS5">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PISHOW Gamer Store - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PISHOW - Produtos</title>
+  <link rel="icon" href="imagens/p.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/estilos.css">
+  <style>
+    .container{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .produto{
+        margin: 10px;
+        margin-left: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-top: 20px;
+    }
+
+    .produto img {
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .produto img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+    div{
+        background-color: white;
+    }
+
+    input[type="button"]{
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PISHOW</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><a href="produtos.html" style="color: orange;">Produtos</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+        <div style="padding: 20px; align-items: center; text-align: center;">
+            <form action="">
+                <input type="text" placeholder="Busque aqui" style="height: 30px; width: 400px; font-size: large; border-color: black; border-radius: 10px;">
+                <input type="button" value="Buscar" style="border-radius: 10px; background-color: black; color: white; width: 100px; height: 30px;">
+            </form>
+        </div>
+    </section>
+    <section>
+        <h2>Periféricos</h2>
+        <div class="container">
+            <div class="produto">
+                <img src="imagens/produto1-mouse.jpg" alt="Produto 1" width="200" height="90">
+                <p>Mouse Gamer - R$199,99</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/produto2-teclado.jpg" alt="Produto 2" width="200" height="90">
+                <p>Teclado Mecânico - R$349,99</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/produto3-headset.jpg" alt="Produto 3" width="200" height="160">
+                <p>Headset - R$169,99</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/produto8-mousepad.jpg" alt="Produto 4" width="200" height="160">
+                <p>Mouse Pad - R$59,99</p>
+            </div>
+        </div>
+        <h2>Componentes Para Computador</h2>
+        <div class="container">
+            <div class="produto" id="ryzen">
+                <img src="imagens/produto5-ryzen.jpg" alt="Produto 5" width="200">
+                <p>Processador Ryzen - R$869,99</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/produto6-placamae.jpg" alt="Produto 6" width="200">
+                <p>Placa Mãe Gigabyte- R$699,99</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/produto9-placadevideo.jpg" alt="Produto 7" width="200">
+                <p>Placa de Video PNY - R$5.999,99</p>
+            </div>
+            <div class="produto">
+                <img src="imagens/produto10-ssd.jpg" alt="Produto 8" width="200">
+                <p>SSD NVMe - R$399,99</p>
+            </div>
+        </div>
+        <h2>Consoles</h2>
+        <div class="container">
+            <div class="produto" id="ps5">
+                <img src="imagens/ps5.jpg" alt="Produto 9" width="200">
+                <p>PlayStation 5 - R$3.499,99</p>
+            </div>
+            <div class="produto" id="xbox">
+                <img src="imagens/produto11-xboxseriesx.jpg" alt="Produto 10" width="200">
+                <p>Xbox Series X - R$4.199,99</p>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 PISHOW Gamer Store - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
